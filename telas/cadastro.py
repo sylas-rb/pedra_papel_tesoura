@@ -1,6 +1,8 @@
 import pygame
 import sys
-sys.path.append('/storage/emulated/0/Android/media/com.termux/pydroid3/utils/botao.py')
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from utils.botao import redimensionar
 
 def tela_cadastro(largura_tela, altura_tela):
